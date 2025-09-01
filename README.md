@@ -1,10 +1,20 @@
 # local_ai_assistant
-*learning how to create a local ai assistant using Python*
 
-//Introduction
-This project aims to create a local AI assistant using Python.
-I thought it would be a fun and edcuational project to learn more about AI and how to implement it in a local enviroment.
-The assistant will be able to perform various tass such as saving kanji and its meaning into a local database, retrieving kanji information.
+learning how to create a local ai assistant using Python
+
+# Introduction
+Using Python to create a local AI assistant that can perform tasks
+I thought it would be a fun project to learn more about AI and Python
+
+# Requirements
+
+| Applications | Version | Description |
+|--------------|---------|-------------|
+| Python       | 3.8+    | Programming language |
+| Ollama      | latest  | Local LLMs |
+| Gradio      | latest  | Web interface |
+
+# Setup
 
 
 
