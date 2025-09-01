@@ -17,12 +17,8 @@ I thought it would be a fun project to learn more about AI and Python
 # Setup
 1. Install Python 3.8 or higher from [python.org](https://www.python.org/downloads/).
 2. Install Ollama from [ollama.com](https://ollama.com/download).
-3. ```	cd path/to/your/project
-		python -m venv venv
-		.\venv\Scripts\activate  # On Windows
-   ```
-4. ```pip install gradio ollama```
-5. ```python app.py```
+
+# Updates
 
 
 
