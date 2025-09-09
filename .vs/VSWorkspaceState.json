@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\backend\\venv"
+    "\\frontend\\src"
   ],
-  "SelectedNode": "\\backend",
+  "SelectedNode": "\\frontend",
   "PreviewInSolutionExplorer": false
 }
