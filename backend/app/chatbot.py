@@ -1,18 +1,16 @@
+import subprocess
 
-from ollama import Client
+def query_ollama(prompt: str, model: str = "mistral") -> str:
+    """
 
-def main():
-        client = Client()
-        print(" Your Local Ai Assitant (type 'exit' to quit)")
-        while True:
-            prompt = input("You: ")
-            if prompt.lower() == "exit":
-                print("GoodBye!")
-                break
-            response = client.chat(
-                model = "mistral",
-                messages=[{"role": "user", "content": prompt}]
-            )
-            print("AI:", response)
-if __name__ == "__main__":
-    main()
+    Send a prompt to the Ollama model and return the response.
+
+    """
+
+    result = subprocess.run(
+        ["ollama", "query", model, prompt],
+        capture_output=True,
+        text=True,
+    )
+
+    return result.stdout.strip()
