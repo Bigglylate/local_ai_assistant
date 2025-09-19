@@ -51,6 +51,7 @@ def chat_endpoint(request: ChatRequest):
 			["ollama", "run", "mistral", request.prompt],
 			capture_output=True,
 			text=True,
+			encoding="utf-8",
 		)
 		if result.returncode != 0:
 			return ChatResponse(response="Error: Unable to get response from model.")

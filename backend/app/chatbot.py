@@ -11,6 +11,7 @@ def query_ollama(prompt: str, model: str = "mistral") -> str:
         ["ollama", "query", model, prompt],
         capture_output=True,
         text=True,
+        encoding="utf-8",
     )
 
     return result.stdout.strip()
